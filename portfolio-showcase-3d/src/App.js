@@ -26,7 +26,7 @@ export default function App() {
                     <iframe src="https://www.golic.at" />
                 </Html>
             </primitive>
-            <Text font="./Manrope-Bold.woff" fontSize={0.75} position={[2, 0.50, 0.75]} rotation-y={-1.5} maxWidth={2}>
+            <Text font="./Manrope-Bold.woff" fontSize={0.6} position={[1.75, 0.50, 0.75]} rotation-y={-1.25} maxWidth={2}>
                 Benjamin Golić
             </Text>
         </Float>

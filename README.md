@@ -9,6 +9,12 @@ This project is part of the [Three.js Journey](https://threejs-journey.com/) cou
 
 Check out the used portfolio [here](https://www.golic.at).
 
+## 🖼️ Preview
+
+- **Desktop Version:**
+
+  ![3D Portfolio Preview](./resources/mbp_preview.png)
+
 ## 🛠️ Technologies Used
 
 - [Three.js](https://threejs.org/) – 3D rendering library
