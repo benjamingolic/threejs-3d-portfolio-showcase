@@ -13,6 +13,7 @@ Check out the used portfolio [here](https://www.golic.at).
 
 - [Three.js](https://threejs.org/) – 3D rendering library
 - [GLTFLoader](https://threejs.org/docs/#examples/en/loaders/GLTFLoader) – To load 3D models (MacBook, iPhone)
+- [Vite](https://vitejs.dev/) – Fast build tool for modern web projects
 - [HTML & CSS](https://developer.mozilla.org/en-US/docs/Web/HTML) – For building the portfolio layout
 - [GitHub Pages](https://pages.github.com/) – To host the project
 
