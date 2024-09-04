@@ -1,4 +1,4 @@
-import { Html, PresentationControls, Float, Environment, useGLTF, ContactShadows } from '@react-three/drei';
+import { Text, Html, PresentationControls, Float, Environment, useGLTF, ContactShadows } from '@react-three/drei';
 
 export default function App() {
 
@@ -26,6 +26,9 @@ export default function App() {
                     <iframe src="https://www.golic.at" />
                 </Html>
             </primitive>
+            <Text font="./Manrope-Bold.woff" fontSize={0.75} position={[2, 0.50, 0.75]} rotation-y={-1.5} maxWidth={2}>
+                Benjamin Golić
+            </Text>
         </Float>
 
     </PresentationControls>
