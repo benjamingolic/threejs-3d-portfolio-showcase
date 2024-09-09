@@ -75,13 +75,13 @@ export default function App() {
                         <Mac position-y={-1.2} />
 
                         <D3Title
-                            size={isNotebook ? 0.4 : 0.5}
+                            size={isNotebook ? 0.35 : 0.45}
                             text="BENJAMIN"
                             position={[1.5, 0.50, -0.75]}
                             rotation={[0, -1.5, 0]}
                         />
                         <D3Title
-                            size={isNotebook ? 0.4 : 0.5}
+                            size={isNotebook ? 0.35 : 0.45}
                             text="GOLIĆ"
                             position={[1.5, -0.20, -0.75]}
                             rotation={[0, -1.5, 0]}
