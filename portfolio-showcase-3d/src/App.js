@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Text, PresentationControls, Float, Environment, ContactShadows } from '@react-three/drei';
+import { Text, PresentationControls, Float, Environment, ContactShadows, Text3D } from '@react-three/drei';
 import Mac from './MacModel';
 import Phone from './iPhoneModel';
 import AirPodsPro from './AirPodsProModel';
 import RedBull from './RedBullModel';
+import D3Title from './D3Title';
 
 export default function App() {
     const [isMobile, setIsMobile] = useState(false);
@@ -20,10 +21,9 @@ export default function App() {
     }, []);
 
     return <>
-
         <color attach="background" args={['#121E30']} />
 
-        <Environment preset='city' />
+        <Environment preset="city" />
 
         <PresentationControls
             global
@@ -36,30 +36,52 @@ export default function App() {
 
             <Float rotationIntensity={0.5}>
                 <AirPodsPro
-                    position={isMobile ? [2, 1, -1] : [-2.5, -0.5, -2]}
-                    rotation={[0, 0.2, 0]}
+                    position={isMobile ? [-0.25, -2, -0.6] : [-2.25, -0.5, 0]}
+                    rotation={[-0.6, 0.2, 0]}
+                    scale={0.5}
                 />
             </Float>
 
             <Float rotationIntensity={0.5}>
                 <RedBull
-                    position={isMobile ? [-0.5, 0, -0.6] : [2.5, -0.5, 1]}
-                    rotation={[0, -0.5, 0]}
+                    position={isMobile ? [2.25, 0, -1] : [-2, -0.65, -2]}
+                    rotation={isMobile ? [-0.3, 0, -0.2] : [-0.2, 0, 0]}
+                    scale={0.6}
                 />
             </Float>
 
+            {/*[2, -0.5, 1.5]*/}
+
             <Float rotationIntensity={0.4}>
-                <rectAreaLight width={2.5} height={1.65} intensity={65} color={'#CDD7FD'} rotation={[0.1, Math.PI, 0]} position={[0, 0.55, -1.15]} />
+                <rectAreaLight width={2.5} height={1.65} intensity={5} color={'#CDD7FD'} rotation={[0.1, Math.PI, 0]} position={[0, 0.55, -1.15]} />
                 {isMobile ? (
                     <>
-                        <Phone position-y={-1.3} rotation-x={-0.15} />
+                        {/*}
+                        <Text color="#CECECE" fontSize={0.2} letterSpacing={0.02} maxWidth={1} textAlign="center" position={[0.45, 1.2, -1.]} rotation={[-0.25, -0.2, 0]}>
+                            BENJAMIN
+                            GOLIĆ
+                        </Text>
+                        
+                        <Phone position-y={-2} position-x={0.35} rotation-x={-0.35} rotation-y={-0.25} />
+                        */}
+
+                        <Phone position-y={-1.5} position-x={0.35} rotation-x={-0.35} rotation-y={-0.25} />
                     </>
                 ) : (
                     <>
                         <Mac position-y={-1.2} />
-                        <Text font="./Manrope-Bold.woff" fontSize={0.5} position={[1.75, 0.50, 0.75]} rotation-y={-1.25} maxWidth={2}>
-                            BENJAMIN GOLIĆ
-                        </Text>
+
+                        <D3Title
+                            text="BENJAMIN"
+                            position={[1.5, 0.50, -0.75]}
+                            rotation={[0, -1.5, 0]}
+                        />
+                        <D3Title
+                            text="GOLIĆ"
+                            position={[1.5, -0.20, -0.75]}
+                            rotation={[0, -1.5, 0]}
+                        />
+
                     </>
                 )}
 

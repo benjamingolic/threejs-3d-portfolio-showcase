@@ -10,7 +10,7 @@ export default function RedBullModel(props) {
 
     useFrame(() => {
         if (modelRef.current) {
-            modelRef.current.rotation.y += 0.01; 
+            modelRef.current.rotation.y += 0.005; 
         }
     });
 
