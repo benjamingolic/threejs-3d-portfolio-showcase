@@ -37,7 +37,7 @@ export default function Model(props) {
                     <mesh geometry={nodes.Circle002_2.geometry} material={materials.ScreenGlass} />
                     <mesh geometry={nodes.Circle002_3.geometry} material={materials.Rubber} />
                     <mesh geometry={nodes.Circle002_4.geometry} material={materials.DisplayGlass} />
-                    {/*<mesh geometry={nodes.AppleLogo000.geometry} material={materials['AppleLogo.004']} position={[0, -0.11, -1.8,]} rotation={[-Math.PI, 0, -Math.PI,]} scale={[0.58, 0.58, 0.58,]} />*/}
+                    <mesh geometry={nodes.AppleLogo000.geometry} material={materials['AppleLogo.004']} position={[0, -0.11, -1.8,]} rotation={[-Math.PI, 0, -Math.PI,]} scale={[0.58, 0.58, 0.58,]} />
                     <Portfolio />
                 </group>
                 <group position={[12.2, 0.03, 0.6,]} scale={5.8} >

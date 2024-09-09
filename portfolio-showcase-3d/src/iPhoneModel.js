@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import {Html, useGLTF } from '@react-three/drei'
 
-
 export default function Model(props) {
     const group = useRef()
     const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
@@ -37,9 +36,7 @@ export default function Model(props) {
                     <mesh geometry={nodes.Circle032_1.geometry} material={nodes.Circle032_1.material} />
                 </group>
                 <mesh geometry={nodes.VolumeButtons001.geometry} material={nodes.VolumeButtons001.material} position={[-0.66, 0.21, 0,]} />
-                <mesh geometry={nodes.SCREEN.geometry} material={materials['Display.002']} />
             </group>
-
         </group>
     )
 }
@@ -49,7 +46,7 @@ useGLTF.preload('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/publ
 function MobilePortfolio() {
     return (
         <group>
-            <Html wrapperClass='iPhoneScreen' prepend transform distanceFactor={1.6} position={[0.17, -0.25, 0.08]} rotation-x={0}>
+            <Html transform wrapperClass='iPhoneScreen' distanceFactor={1.6} position={[0.17, -0.25, 0.08]} rotation-x={0}>
                 <iframe src="https://www.golic.at" />
             </Html>
         </group>
