@@ -8,10 +8,13 @@ import D3Title from './D3Title';
 
 export default function App() {
     const [isMobile, setIsMobile] = useState(false);
+    const [isNotebook, setIsNotebook] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            const width = window.innerWidth;
+            setIsMobile(width <= 768);
+            setIsNotebook(width > 768 && width <= 1680);
         };
 
         handleResize();
@@ -72,11 +75,13 @@ export default function App() {
                         <Mac position-y={-1.2} />
 
                         <D3Title
+                            size={isNotebook ? 0.4 : 0.5}
                             text="BENJAMIN"
                             position={[1.5, 0.50, -0.75]}
                             rotation={[0, -1.5, 0]}
                         />
                         <D3Title
+                            size={isNotebook ? 0.4 : 0.5}
                             text="GOLIĆ"
                             position={[1.5, -0.20, -0.75]}
                             rotation={[0, -1.5, 0]}
