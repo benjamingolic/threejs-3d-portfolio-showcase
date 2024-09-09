@@ -23,10 +23,10 @@ canvas {
     border-radius: 20px;
 }
 
-.phoneScreen iframe {
+.iPhoneScreen iframe {
     border: none;
     background-color: black;
     width: 375px;
     height: 812px;
-    border-radius: 40px;
+    border-radius: 60px;
 }

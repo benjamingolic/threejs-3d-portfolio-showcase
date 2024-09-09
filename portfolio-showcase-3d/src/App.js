@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Text, Html, PresentationControls, Float, Environment, useGLTF, ContactShadows } from '@react-three/drei';
 import Mac from './MacModel';
+import Phone from './iPhoneModel';
 
 export default function App() {
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
@@ -28,11 +29,14 @@ export default function App() {
             <>
                 <Environment preset='night' />
                 <Float rotationIntensity={0.4}>
+                    {/*
                     <primitive object={phone.scene} position-x={0} position-y={-1.2} rotation={[-0.2, -0.6, -0.03]}>
                         <Html transform wrapperClass='phoneScreen' scale={1.89} distanceFactor={1.17} position={[0.24, 1.13, -2.1]}>
                             <iframe src="https://www.golic.at" />
                         </Html>
                     </primitive>
+                    */}
+                    <Phone position-y={-1.2} />
                 </Float>
             </>
             ) : (
