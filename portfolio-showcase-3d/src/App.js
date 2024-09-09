@@ -39,7 +39,7 @@ export default function App() {
 
             <Float rotationIntensity={0.5}>
                 <AirPodsPro
-                    position={isMobile ? [-0.25, -2, -0.6] : [-2.25, -0.5, 0]}
+                    position={isMobile ? [-0.25, -2, -0.6] : [-1.85, -0.5, 0]}
                     rotation={[-0.6, 0.2, 0]}
                     scale={0.5}
                 />
@@ -47,7 +47,7 @@ export default function App() {
 
             <Float rotationIntensity={0.5}>
                 <RedBull
-                    position={isMobile ? [2.25, 0, -1] : [-2, -0.65, -2]}
+                    position={isMobile ? [2.25, 0, -1] : [-1.6, -0.65, -2]}
                     rotation={isMobile ? [-0.3, 0, -0.2] : [-0.2, 0, 0]}
                     scale={0.6}
                 />
@@ -72,18 +72,18 @@ export default function App() {
                     </>
                 ) : (
                     <>
-                        <Mac position-y={-1.2} />
+                        <Mac position-y={-1.2} position-x={0.5} />
 
                         <D3Title
                             size={isNotebook ? 0.35 : 0.45}
                             text="BENJAMIN"
-                            position={[1.5, 0.50, -0.75]}
+                            position={[2, 0.50, -0.75]}
                             rotation={[0, -1.5, 0]}
                         />
                         <D3Title
                             size={isNotebook ? 0.35 : 0.45}
                             text="GOLIĆ"
-                            position={[1.5, -0.20, -0.75]}
+                            position={[2, -0.20, -0.75]}
                             rotation={[0, -1.5, 0]}
                         />
 
