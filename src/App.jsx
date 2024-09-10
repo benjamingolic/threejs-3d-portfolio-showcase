@@ -53,13 +53,12 @@ export default function App() {
                 />
             </Float>
 
-            {/*[2, -0.5, 1.5]*/}
-
             <Float rotationIntensity={0.4}>
                 <rectAreaLight width={2.5} height={1.65} intensity={5} color={'#CDD7FD'} rotation={[0.1, Math.PI, 0]} position={[0, 0.55, -1.15]} />
                 {isMobile ? (
                     <>
-                        {/*}
+                        {/*} ** This is the original code, but it's commented out because it's not used in the final version **
+                        ** The code below is for the iPhone model and a 2D text element **
                         <Text color="#CECECE" fontSize={0.2} letterSpacing={0.02} maxWidth={1} textAlign="center" position={[0.45, 1.2, -1.]} rotation={[-0.25, -0.2, 0]}>
                             BENJAMIN
                             GOLIĆ
