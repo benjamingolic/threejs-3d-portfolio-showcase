@@ -2,8 +2,10 @@ import react from '@vitejs/plugin-react'
 import { transformWithEsbuild } from 'vite'
 import restart from 'vite-plugin-restart'
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default {
-    base: '/threejs-3d-portfolio-showcase/',
+    base: isProduction ? '/threejs-3d-portfolio-showcase/' : '/',
     root: 'src/',
     publicDir: '../public/',
     plugins:
