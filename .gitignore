@@ -7,18 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
+# Build directories
+dist/
+dist-ssr/
+out/
+
+# Temporary build files from Vite
+.vite/
+.vitepress/
+vite-error.log
+
+# Local environment and IDE settings
+*.local
+.env
+.env.local
+.env.*.local
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Lockfiles (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Mac system files
+.DS_Store
+
+# Temporary editor-specific files
+*.swp
+*.swo
+
+# Typescript output (optional)
+*.tsbuildinfo
