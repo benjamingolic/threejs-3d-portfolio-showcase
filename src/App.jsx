@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Text, PresentationControls, Float, Environment, ContactShadows, Text3D } from '@react-three/drei';
-import Mac from './MacModel';
-import Phone from './iPhoneModel';
-import AirPodsPro from './AirPodsProModel';
-import RedBull from './RedBullModel';
-import D3Title from './D3Title';
+import Mac from './MacModel.jsx';
+import Phone from './iPhoneModel.jsx';
+import AirPodsPro from './AirPodsProModel.jsx';
+import RedBull from './RedBullModel.jsx';
+import D3Title from './D3Title.jsx';
 
 export default function App() {
     const [isMobile, setIsMobile] = useState(false);
